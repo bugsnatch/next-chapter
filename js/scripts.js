@@ -216,7 +216,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== '518feb178523d3c70ef61b57bbe176c4')
+        if (MD5($('#invite_code').val()) !== 'b7e24e4457ab642b25af003974154373')
         {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
