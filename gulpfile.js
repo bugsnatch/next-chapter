@@ -31,10 +31,12 @@ gulp.task('move', function(){
         'index.html',
         'js/vendor/*',
         'js/*min*',
-        'img/*',
+        'img/**',
         'css/*',
         'fonts/*',
         'node_modules/waypoints/lib/jquery.waypoints.min.js',
+        'node_modules/animate.css/animate.min.css',
+        'node_modules/font-awesome/css/font-awesome.min.css',
         '*png',
         '*svg'
     ];
