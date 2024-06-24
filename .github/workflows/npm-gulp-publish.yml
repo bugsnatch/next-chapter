@@ -33,9 +33,17 @@ jobs:
         gulp
 
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        path: '.'
+        name: github-pages
+        path: |
+          index.html
+          js/vendor/*
+          js/*min*
+          img/*
+          css/*
+          fonts/*
+          *png
 
   # Deployment job
   deploy:
