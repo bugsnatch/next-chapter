@@ -29,6 +29,7 @@ gulp.task('minify-js', function () {
 gulp.task('move', function(){
     var filesToMove = [
         'index.html',
+        'manifest.json',
         'js/vendor/*',
         'js/*min*',
         'img/**',
@@ -37,6 +38,7 @@ gulp.task('move', function(){
         'node_modules/waypoints/lib/jquery.waypoints.min.js',
         'node_modules/animate.css/animate.min.css',
         'node_modules/font-awesome/css/font-awesome.min.css',
+        'node_modules/font-awesome/fonts/fontawesome-webfont.ttf',
         '*png',
         '*svg'
     ];
