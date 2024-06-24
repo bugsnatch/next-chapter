@@ -26,5 +26,23 @@ gulp.task('minify-js', function () {
         .pipe(gulp.dest('./js'));
 });
 
+gulp.task('move', function(){
+    var filesToMove = [
+        'index.html',
+        'js/vendor/*',
+        'js/*min*',
+        'img/*',
+        'css/*',
+        'fonts/*',
+        '*png',
+        '*svg'
+    ];
+
+    // the base option sets the relative root for the set of files,
+    // preserving the folder structure
+    return gulp.src(filesToMove, { base: './' })
+      .pipe(gulp.dest('dist'));
+});
+
 // default task
-gulp.task('default', gulp.series('sass', 'minify-js'));
+gulp.task('default', gulp.series('sass', 'minify-js', 'move'));

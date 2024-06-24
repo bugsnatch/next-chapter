@@ -35,14 +35,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: |
-          index.html
-          js/vendor/*
-          js/*min*
-          img/*
-          css/*
-          fonts/*
-          *png
+        path: './dist'
 
   # Deployment job
   deploy:
