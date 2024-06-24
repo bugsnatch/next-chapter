@@ -34,6 +34,7 @@ gulp.task('move', function(){
         'img/*',
         'css/*',
         'fonts/*',
+        'node_modules/waypoints/lib/jquery.waypoints.min.js',
         '*png',
         '*svg'
     ];
