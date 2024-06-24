@@ -162,7 +162,7 @@ $(document).ready(function () {
     }
 
     /********************** Embed youtube video *********************/
-    $('.player').play();
+    // $('.player').videojs();
 
 
     /********************** Toggle Map Content **********************/
