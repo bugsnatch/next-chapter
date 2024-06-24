@@ -162,7 +162,7 @@ $(document).ready(function () {
     }
 
     /********************** Embed youtube video *********************/
-    $('.player').YTPlayer();
+    $('.player').autoplay('muted');
 
 
     /********************** Toggle Map Content **********************/
@@ -247,10 +247,11 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
+        mapID: 'map-canvas',
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
+    var marker = new google.maps.marker.AdvancedMarkerElement ({
         position: location,
         map: map
     });

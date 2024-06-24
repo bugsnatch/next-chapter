@@ -363,8 +363,22 @@
 </section>
 
 <section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://www.borgogiustotuscany.com/borgogiustotuscany.MP4',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+    <div id="bgndVideo" class="player">
+        <video
+                id="video-bg-player"
+                class="player"
+                controls
+                preload="auto"
+                data-setup='{"autplay": true}'>
+            <source src="https://www.borgogiustotuscany.com/borgogiustotuscany.MP4" type="video/mp4" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                    supports HTML5 video
+                </a>
+            </p>
+        </video>
     </div>
     <div id="video-content">
         <h5>Partigliano (LU)</h5>
@@ -518,10 +532,13 @@
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+<link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXY0vDG6G8wiVcR7StKgMiWDV8IvPm6X0&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXY0vDG6G8wiVcR7StKgMiWDV8IvPm6X0&callback=initMap&libraries=marker">
+</script>
 </body>
 </html>
