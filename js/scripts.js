@@ -299,7 +299,7 @@ $(document)
 /********************** Extras **********************/
 
 // Google map
-function initMap() {
+async function initMap() {
   var location = {
     lat: 43.9481091,
     lng: 10.4680471
@@ -307,7 +307,7 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
     zoom: 15,
     center: location,
-    mapID: 'c4ec0dfdcf5b1a55',
+    mapId: 'c4ec0dfdcf5b1a55',
     scrollwheel: false
   });
 
