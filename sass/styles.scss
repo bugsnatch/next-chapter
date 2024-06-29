@@ -923,7 +923,7 @@ RSVP form
       -webkit-border-radius: 5px;
       border-radius: 5px;
       border: solid 1px $keyline-color;
-      text-align: left;
+
       position: relative;
 
       i {
@@ -937,12 +937,14 @@ RSVP form
         width: 1px;
         border-right: solid 1px $keyline-color;
         position: absolute;
+        text-align: left;
         top: 50%;
         left: 30px;
         transform: translateY(-50%);
       }
 
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-wheat-awn-circle-exclamation, .fa-baby {
+
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-wheat-awn-circle-exclamation, .fa-baby, .fa-circle-question {
         font-size: 14px;
         position: absolute;
         top: 50%;
@@ -958,6 +960,14 @@ RSVP form
         -webkit-border-radius: 6px;
         border-radius: 6px;
         border: none;
+      }
+
+      label {
+        color: $txt-primary;
+        font-size: 14px;
+        cursor: text;
+        vertical-align: middle;
+        font-weight: 300;
       }
 
       input::-webkit-input-placeholder {
