@@ -41,7 +41,8 @@ gulp.task('move', function () {
     'node_modules/font-awesome/css/font-awesome.min.css',
     'node_modules/font-awesome/fonts/fontawesome-webfont*',
     '*png',
-    '*svg'
+    '*svg',
+    'browserconfig.xml'
   ];
 
   // the base option sets the relative root for the set of files,

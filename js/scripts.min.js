@@ -241,6 +241,7 @@ $(document)
           .prop('required', true);
         $('input[name="children"]')
           .prop('required', true);
+        $('#presenza').val("Yes")
       }
     });
 
@@ -248,6 +249,7 @@ $(document)
       if(this.checked) {
         $('input[name="adults"]').removeAttr('required');
         $('input[name="children"]').removeAttr('required');
+        $('#presenza').val("No")
       }
     });
 
