@@ -109,10 +109,7 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="hero-content text-center">
-                    <!--<h1>Ram and Antara</h1>-->
                     <img src="img/logo-lg.png">
-                    <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
                 </div>
             </div>
         </div>
@@ -133,7 +130,6 @@
                 <h3>The next chapter of our journey!</h3>
                 <p>The date is set for 2<sup>nd</sup> of September '24 and we would like you to be a part of
                     it.</p>
-                <div class="share-bar"></div>
             </div>
         </div>
     </div>
@@ -308,10 +304,35 @@
 </section>
 
 <section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
+    <div class="container events text-center">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">How to get there?<br>
+                                   Come arrivare?
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3">
+                    <p><strong>Plane</strong></p>
+
+                    <p>The closest airport is Pisa.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp4">
+                    <p><strong>Car</strong></p>
+
+                    <p>From Milan.<br>
+                        Highway A1 - A15
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
@@ -400,15 +421,15 @@
                                                      readonly>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
-                            <div class="form-input-group text-center">
+                        <div class="col-md-3 col-sm-3 text-center">
+                            <div class="form-input-group">
                                 <label>
                                     <input class="radio-inline" type="radio" name="attending" id="inlineRadio1" value="yes" required="required">Yes
                                 </label>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-3">
-                            <div class="form-input-group text-center">
+                        <div class="col-md-3 col-sm-3 text-center">
+                            <div class="form-input-group">
                                 <label>
                                     <input class="radio-inline" type="radio" name="attending" id="inlineRadio2" value="no">No
                                 </label>
@@ -420,16 +441,14 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="adults" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Number of Adults"
-                                                                  required>
+                                                                  max="10"
+                                                                  placeholder="Number of Adults">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-baby"></i><input type="number" name="children" class="" min="0"
-                                                                max="5" placeholder="Children"
-                                                                required>
+                                                                max="5" placeholder="Children">
                             </div>
                         </div>
                     </div>
@@ -474,7 +493,7 @@
         </div>
     </div>
 </footer>
-<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="js/vendor/jquery-3.7.1.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>

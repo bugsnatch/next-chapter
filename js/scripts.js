@@ -123,6 +123,8 @@ $(document)
           if (scroll >= 20) {
             $('section.navigation')
               .addClass('fixed');
+            $('.logo img')
+              .attr('src','img/logo_white.png');
             $('header')
               .css({
                 'border-bottom': 'none',
@@ -139,6 +141,8 @@ $(document)
           } else {
             $('section.navigation')
               .removeClass('fixed');
+            $('.logo img')
+              .attr('src','img/logo.png');
             $('header')
               .css({
                 'border-bottom': 'solid 1px rgba(255, 255, 255, 0.2)',
@@ -258,6 +262,22 @@ $(document)
     /********************** RSVP **********************/
     $('#invite_code')
       .val(inviteCode);
+
+    $('#inlineRadio1').change(function () {
+      if(this.checked) {
+        $('input[name="adults"]')
+          .prop('required', true);
+        $('input[name="children"]')
+          .prop('required', true);
+      }
+    });
+
+    $('#inlineRadio2').change(function () {
+      if(this.checked) {
+        $('input[name="adults"]').removeAttr('required');
+        $('input[name="children"]').removeAttr('required');
+      }
+    });
 
     $('#rsvp-form')
       .on('submit', function (e) {

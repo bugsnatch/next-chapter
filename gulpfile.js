@@ -30,7 +30,7 @@ gulp.task('minify-js', function () {
 gulp.task('move', function () {
   var filesToMove = [
     'index.html',
-    'manifest.json',
+    '*manifest*',
     'js/vendor/*',
     'js/*min*',
     'img/**',
