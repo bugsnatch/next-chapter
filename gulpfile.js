@@ -40,6 +40,9 @@ gulp.task('move', function () {
     'node_modules/animate.css/animate.min.css',
     'node_modules/font-awesome/css/font-awesome.min.css',
     'node_modules/font-awesome/fonts/fontawesome-webfont*',
+    'node_modules/video.js/dist/video.min.js',
+    'node_modules/video.js/dist/video-js.min.css',
+    'node_modules/videojs-youtube/dist/Youtube.min.js',
     '*png',
     '*svg',
     'browserconfig.xml'

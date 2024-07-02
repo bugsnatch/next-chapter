@@ -124,7 +124,7 @@ $(document)
             $('section.navigation')
               .addClass('fixed');
             $('.logo img')
-              .attr('src','img/logo_white.png');
+              .attr('src', 'img/logo_white.png');
             $('header')
               .css({
                 'border-bottom': 'none',
@@ -142,7 +142,7 @@ $(document)
             $('section.navigation')
               .removeClass('fixed');
             $('.logo img')
-              .attr('src','img/logo.png');
+              .attr('src', 'img/logo.png');
             $('header')
               .css({
                 'border-bottom': 'solid 1px rgba(255, 255, 255, 0.2)',
@@ -163,7 +163,7 @@ $(document)
 
     $(function () {
 
-      $('a[href*=#]:not([href=#])')
+      $('a[href*="#"]:not([href="#"])')
         .click(function () {
           if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
@@ -235,23 +235,29 @@ $(document)
     $('#invite_code')
       .val(inviteCode);
 
-    $('#inlineRadio1').change(function () {
-      if(this.checked) {
-        $('input[name="adults"]')
-          .prop('required', true);
-        $('input[name="children"]')
-          .prop('required', true);
-        $('#presenza').val("Yes")
-      }
-    });
+    $('#inlineRadio1')
+      .change(function () {
+        if (this.checked) {
+          $('input[name="adults"]')
+            .prop('required', true);
+          $('input[name="children"]')
+            .prop('required', true);
+          $('#presenza')
+            .val('Yes');
+        }
+      });
 
-    $('#inlineRadio2').change(function () {
-      if(this.checked) {
-        $('input[name="adults"]').removeAttr('required');
-        $('input[name="children"]').removeAttr('required');
-        $('#presenza').val("No")
-      }
-    });
+    $('#inlineRadio2')
+      .change(function () {
+        if (this.checked) {
+          $('input[name="adults"]')
+            .removeAttr('required');
+          $('input[name="children"]')
+            .removeAttr('required');
+          $('#presenza')
+            .val('No');
+        }
+      });
 
     $('#rsvp-form')
       .on('submit', function (e) {
